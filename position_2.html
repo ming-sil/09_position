@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position_2</title>
+
+    <style>
+
+        *{margin: 0; padding: 0;}
+
+        .wrap{
+            width: 500px;
+            height: 400px;
+            background-color: lightgrey;
+            margin: 0 auto;
+            position: relative;
+            /* =>자식이 절대값을 사용했을 때 좌표값 기준을 부모로 만들고 싶으면 
+            부모 엘리먼트에 상대값을 넣어주면 됨 */
+        }
+
+        .in_box{
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* margin: 0 auto;
+             =>절대값 사용 시 마진의 오토값을 사용할 수 없음 */
+            left: 50%;
+            margin-left: -50px;
+            top: 50%;
+            margin-top: -50px;
+        }
+          
+        /* *포지션 이용 시 가운데 정렬 공식(left 기준)
+            =>left: 50%;
+            =>margin-left: -엘리먼트 가로값/2; */
+    </style>
+
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="in_box"></div>
+    </div>
+
+</body>
+</html>

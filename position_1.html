@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position_1</title>
+
+    <style>
+
+        *{margin: 0; padding: 0;}
+
+        .box{
+            width: 300px;
+            height: 300px;
+            font-size: 50px;
+            text-align: center;
+            line-height: 300px;
+            /* position: absolute; */
+            /* position: relative; */
+        }
+
+        .box_1{
+            background-color: indianred;
+            position: absolute;
+            /* top: 0;
+            left: 0; */
+            right: 100px;
+            bottom: 100px;
+        }
+
+        .box_2{
+            background-color: lightgreen;
+            position: relative;
+            /* top: 150px;
+            left: 150px; */
+            bottom: 100px;
+            right: 100px;
+        }
+
+        .box_3{
+            background-color: skyblue;
+            /* top: 300px;
+            left: 300px; */
+        }
+
+        /* *포지션
+        1.absolute
+        =>절대값 좌표
+        =>브라우저 좌측 상단 기준 
+        =>top, left, right, bottom을 이용하여 좌표 값을 정의할 수 있음
+        
+        2.relative
+        =>상대값 좌표
+        =>엘리먼트 좌측 상단기준
+        =>top, left, right, bottom을 이용하여 좌표 값을 정의할 수 있음*/
+        
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box box_1">1</div>
+    <div class="box box_2">2</div>
+    <div class="box box_3">3</div>
+
+</body>
+</html>

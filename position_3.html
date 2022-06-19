@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position_3</title>
+
+    <style>
+
+        *{margin: 0; padding: 0;}
+
+        .wrap{
+            height: 2000px;
+        }
+
+        header{
+            width: 100%;
+            height: 100px;
+            background-color: lightgray;
+            position: fixed;
+            /* =>절대값을 사용할 땐 반드시 엘리먼트의 크기값을 지정해야 됨 */
+            top: 0;
+            left: 0;
+        }
+
+        section{
+            height: 700px;
+            background-color: mediumaquamarine;
+        }
+
+        .top_btn{
+            width: 100px;
+            height: 100px;
+            background-color: indianred;
+            border-radius: 50%;
+            position: fixed;
+            /* =>absolute와 동일한 절대값
+            =>엘리먼트를 고정시킬 수 있음 */
+            right: 150px;
+            bottom: 150px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .top_btn a{
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="wrap">
+
+        <header></header>
+        <section></section>
+        <div class="top_btn">
+            <a href="#">Top</a>
+        </div>
+
+    </div>
+    
+</body>
+</html>
